@@ -4,7 +4,6 @@ function solve() {
 
     for (let button of buttons) {
         button.addEventListener('click', function (e) {
-
             let currentButton = e.target;
             let parentNode = currentButton.parentNode;
             let unlockedInput = parentNode.children[4];
