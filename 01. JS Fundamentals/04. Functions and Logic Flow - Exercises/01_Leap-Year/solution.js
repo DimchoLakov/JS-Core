@@ -17,7 +17,7 @@ function leapYear() {
         divResult.textContent = year.toString();
 
         input.value = '';
-    })
+    });
 
 
     function isLeapYear(year) {
