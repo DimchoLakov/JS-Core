@@ -1,3 +1,4 @@
 function extractText() {
-   // TODO:
+   let result = $('#items').children().toArray().map(x => x.textContent).join(', ');
+   $('#result').text(result);
 }
