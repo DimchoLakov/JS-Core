@@ -1,9 +1,12 @@
 function search() {
     let searchStr = $('#searchText').val();
-    let towns = $('#towns')
-        .children();
-    for (let town of towns) {
-        console.log(town.textContent);
+    if (searchStr === '') {
+        return;
     }
-    console.log(towns);
+
+    $('#towns li').css('font-weight', 'normal');
+
+    let matchedTowns = $(`#towns li:contains(${searchStr})`);
+    matchedTowns.css('font-weight', 'bold');
+    $('#result').text(`${matchedTowns.length} matches found`);
 }
