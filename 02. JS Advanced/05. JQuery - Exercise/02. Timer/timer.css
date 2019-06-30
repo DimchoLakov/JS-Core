@@ -60,3 +60,24 @@ body{
     border: 1px solid #f47b84;
     color: #f47b84;
 }
+
+#reset-timer {
+    background: #76c9ca;
+    border: 1px solid #3698a3;
+    padding: 7px 25px;
+    margin: 20px;
+    border-radius: 25px;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 40px;
+    color: #3698a3;
+    outline: none;
+}
+
+#reset-timer:hover {
+    cursor: pointer;
+    outline: none;
+    background: #3698a3;
+    border: 1px solid #76c9ca ;
+    color: #76c9ca;
+}
